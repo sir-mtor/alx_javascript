@@ -18,6 +18,10 @@ request.get(url, (error, response, body) => {
         console.error('Error writing to file:', err);
       } else {
         console.log('File saved successfully.');
+        const lines = body.split('\n');
+        const text = lines[0].trim();
+        console.log(text);
+        console.log(`(${text.length} chars long)`);
       }
     });
   }
