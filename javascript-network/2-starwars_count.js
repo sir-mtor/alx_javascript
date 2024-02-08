@@ -27,6 +27,6 @@ request(apiURL, (error, response, body) => {
     }
   });
 
-  console.log('10\nfile_2\n - [Got]\n' + wedgeFilms + '\n');
+  console.log(wedgeFilms);
 });
 
