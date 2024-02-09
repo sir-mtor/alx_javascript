@@ -2,10 +2,10 @@ const request = require('request');
 
 const apiURL = process.argv[2];
 
-if (!apiURL) {
-  console.error('Please provide the API URL as an argument.');
-  process.exit(1);
-}
+//if (!apiURL) {
+  //console.error('Please provide the API URL as an argument.');
+  //process.exit(1);
+//}
 
 request(apiURL, (error, response, body) => {
   if (error) {
